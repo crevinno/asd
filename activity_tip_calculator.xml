@@ -1,0 +1,217 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3FAAF5"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.sksoft.tipcalculatorsurvey.TipCalculator">
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical">
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="30dp"
+              android:layout_marginTop="20dp"
+              android:gravity="center_vertical"
+              android:orientation="horizontal">
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginRight="30dp"
+                  android:gravity="center"
+                  android:text="Food Total :"
+                  android:textColor="#FBCF3D"
+                  android:textSize="20dp"
+                  android:typeface="normal" />
+
+              <EditText
+                  android:id="@+id/editText"
+                  android:layout_width="130dp"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center_horizontal"
+                  android:background="@drawable/item_border"
+                  android:inputType="number"
+                  android:padding="10dp" />
+          </LinearLayout>
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="30dp"
+              android:layout_marginTop="20dp"
+              android:gravity="center_vertical"
+              android:orientation="horizontal">
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginRight="30dp"
+                  android:gravity="center"
+                  android:text="TIP OPTION :"
+                  android:textColor="#FBCF3D"
+                  android:textSize="20dp"
+                  android:typeface="normal" />
+          </LinearLayout>
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="10dp"
+              android:gravity="center_vertical"
+              android:orientation="horizontal">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/checkBox10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    android:paddingLeft="20dp"
+                    android:text="10%"
+                    android:textColor="#B5D046"
+                    android:textSize="18dp" />
+
+                <RadioButton
+                    android:id="@+id/checkBox15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    android:paddingLeft="20dp"
+                    android:text="15%"
+                    android:textColor="#B5D046"
+                    android:textSize="18dp" />
+
+                <RadioButton
+                    android:id="@+id/checkBox20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    android:paddingLeft="20dp"
+                    android:text="20%"
+                    android:textColor="#B5D046"
+                    android:textSize="18dp" />
+            </RadioGroup>
+          </LinearLayout>
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="15dp"
+              android:gravity="center">
+
+              <Button
+                  android:id="@+id/button2"
+                  android:layout_width="160dp"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentBottom="true"
+                  android:layout_centerHorizontal="true"
+                  android:layout_gravity="center_vertical"
+                  android:background="@drawable/item_button_login"
+                  android:text="Calculate" />
+          </LinearLayout>
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="30dp"
+              android:layout_marginTop="20dp"
+              android:gravity="center_vertical"
+              android:orientation="horizontal">
+
+              <TextView
+                  android:layout_width="130dp"
+                  android:layout_height="wrap_content"
+                  android:layout_marginRight="30dp"
+                  android:text="Tax (6%) "
+                  android:textColor="#FBCF3D"
+                  android:textSize="20dp"
+                  android:typeface="normal" />
+
+              <TextView
+                  android:id="@+id/editText3"
+                  android:layout_width="130dp"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center_horizontal"
+                  android:background="@drawable/item_border"
+                  android:padding="10dp" />
+          </LinearLayout>
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="30dp"
+              android:layout_marginTop="20dp"
+              android:gravity="center_vertical"
+              android:orientation="horizontal">
+
+              <TextView
+                  android:layout_width="130dp"
+                  android:layout_height="wrap_content"
+                  android:layout_marginRight="30dp"
+                  android:text="TIP"
+                  android:textColor="#FBCF3D"
+                  android:textSize="20dp"
+                  android:typeface="normal" />
+
+              <TextView
+                  android:id="@+id/editText4"
+                  android:layout_width="130dp"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center_horizontal"
+                  android:background="@drawable/item_border"
+                  android:padding="10dp" />
+          </LinearLayout>
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="30dp"
+              android:layout_marginTop="20dp"
+              android:gravity="center_vertical"
+              android:orientation="horizontal">
+
+              <TextView
+                  android:layout_width="130dp"
+                  android:layout_height="wrap_content"
+                  android:layout_marginRight="30dp"
+                  android:text="TOTAL PRICE"
+                  android:textColor="#FBCF3D"
+                  android:textSize="20dp"
+                  android:typeface="normal" />
+
+              <TextView
+                  android:id="@+id/editText5"
+                  android:layout_width="130dp"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center_horizontal"
+                  android:background="@drawable/item_border"
+                  android:padding="10dp" />
+          </LinearLayout>
+          <Button
+              android:id="@+id/buttonExit"
+              android:layout_width="160dp"
+              android:layout_marginTop="10dp"
+              android:layout_height="wrap_content"
+              android:background="@drawable/item_button_login"
+              android:text="Exit" />
+      </LinearLayout>
+
+  </ScrollView>
+</RelativeLayout>

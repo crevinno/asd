@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#3FAAF5"
+    tools:context="com.sksoft.tipcalculatorsurvey.MyProfile">
+
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_above="@+id/button2"
+      android:id="@+id/scrollView">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical">
+
+          <CheckBox
+              android:id="@+id/checkBox1"
+              android:layout_width="match_parent"
+              android:layout_height="60dp"
+              android:layout_alignParentTop="true"
+              android:layout_centerHorizontal="true"
+              android:layout_marginBottom="10dp"
+              android:paddingLeft="20dp"
+              android:checked="true"
+              android:text="SET WALLPAPER"
+              android:textColor="#B5D046"
+              android:textSize="18dp" />
+          <CheckBox
+              android:layout_width="match_parent"
+              android:layout_height="60dp"
+              android:text="WRITE EXTERNAL STORAGE"
+              android:id="@+id/checkBox2"
+              android:textColor="#B5D046"
+              android:paddingLeft="20dp"
+              android:textSize="18dp"
+              android:checked="true"
+              android:layout_marginBottom="10dp"
+              android:layout_alignParentTop="true"
+              android:layout_centerHorizontal="true" />
+          <CheckBox
+              android:layout_width="match_parent"
+              android:layout_height="60dp"
+              android:text="CALL PHONE"
+              android:id="@+id/checkBox3"
+              android:textColor="#B5D046"
+              android:paddingLeft="20dp"
+              android:textSize="18dp"
+              android:checked="true"
+              android:layout_marginBottom="10dp"
+              android:layout_alignParentTop="true"
+              android:layout_centerHorizontal="true" />
+          <CheckBox
+              android:layout_width="match_parent"
+              android:layout_height="60dp"
+              android:text="SEND SMS"
+              android:id="@+id/checkBox4"
+              android:textColor="#B5D046"
+              android:paddingLeft="20dp"
+              android:textSize="18dp"
+              android:checked="true"
+              android:layout_marginBottom="10dp"
+              android:layout_alignParentTop="true"
+              android:layout_centerHorizontal="true" />
+          <CheckBox
+              android:layout_width="match_parent"
+              android:layout_height="60dp"
+              android:text="READ CONTACTS"
+              android:id="@+id/checkBox5"
+              android:textColor="#B5D046"
+              android:paddingLeft="20dp"
+              android:checked="true"
+              android:textSize="18dp"
+              android:layout_marginBottom="10dp"
+              android:layout_alignParentTop="true"
+              android:layout_centerHorizontal="true" />
+          <CheckBox
+              android:layout_width="match_parent"
+              android:layout_height="60dp"
+              android:text="ACCESS FILE LOCATION"
+              android:id="@+id/checkBox6"
+              android:textColor="#B5D046"
+              android:checked="true"
+              android:paddingLeft="20dp"
+              android:textSize="18dp"
+              android:layout_marginBottom="10dp"
+              android:layout_alignParentTop="true"
+              android:layout_centerHorizontal="true" />
+      </LinearLayout>
+  </ScrollView>
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/item_button_login"
+        android:text="Submit"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/scrollView"
+        android:layout_alignEnd="@+id/scrollView" />
+    <Button
+        android:id="@+id/buttonExit"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/item_button_login"
+        android:text="Back"
+        android:layout_below="@+id/scrollView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
